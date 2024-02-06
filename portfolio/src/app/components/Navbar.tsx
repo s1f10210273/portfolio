@@ -21,7 +21,7 @@ export default function Navbar() {
       <div className="flex items-center flex-shrink-0 text-white mr-6">
         <span className="font-semibold text-3xl tracking-tight">
             <Link href="/" className={roboto_mono.className}>
-            Shuei's portfolio
+            Shuei&apos;s portfolio
             </Link>
         </span>
       </div>
