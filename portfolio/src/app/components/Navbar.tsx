@@ -73,7 +73,7 @@ export default function Navbar() {
             About Me
           </Link>
           <a
-            href="#responsive-header"
+            href="/#Portfolio"
             className="block mt-4 text-xl lg:inline-block lg:mt-0 text-sky-50 hover:text-white mr-4"
           >
             Portfolio
