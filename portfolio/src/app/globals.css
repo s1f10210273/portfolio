@@ -1,3 +1,91 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.markdown {
+  @apply text-gray-800 leading-relaxed break-words; /* テキストの色や行間などを微調整 */
+}
+
+.markdown > * + * {
+  @apply mt-4 mb-4; /* 段落間のマージンを調整 */
+}
+
+.markdown li + li {
+  @apply mt-2; /* リストアイテム間のマージンを調整 */
+}
+
+.markdown h1 {
+  @apply leading-tight text-4xl font-semibold mb-4 mt-8 pb-2; /* h1のスタイルを微調整 */
+}
+
+.markdown h2 {
+  @apply leading-tight border-b text-2xl font-semibold mb-4 mt-8 pb-2; /* h2のスタイルを微調整 */
+}
+
+.markdown h3 {
+  @apply leading-snug text-lg font-semibold mb-4 mt-8; /* h3のスタイルを微調整 */
+}
+
+.markdown h4 {
+  @apply leading-none text-base font-semibold mb-4 mt-8; /* h4のスタイルを微調整 */
+}
+
+.markdown h5 {
+  @apply leading-tight text-sm font-semibold mb-4 mt-8; /* h5のスタイルを微調整 */
+}
+
+.markdown h6 {
+  @apply leading-tight text-sm font-semibold text-gray-600 mb-4 mt-8; /* h6のスタイルを微調整 */
+}
+
+.markdown blockquote {
+  @apply text-base border-l-4 border-sky-300 pl-4 pr-4 text-gray-600 p-4 font-mono; /* 引用部分のスタイルを微調整 */
+}
+
+.markdown code {
+  @apply font-mono text-sm inline bg-sky-50 rounded px-1 py-1; /* コードブロックのスタイルを微調整 */
+}
+
+.markdown pre {
+  @apply font-mono bg-sky-50 rounded p-4; /* pre要素の背景色や余白を調整 */
+}
+
+.markdown pre code {
+  @apply font-mono block bg-transparent p-0 overflow-visible rounded-none; /* pre要素内のコードブロックのスタイルを微調整 */
+}
+
+.markdown table {
+  @apply w-full bg-sky-50 rounded-lg table-fixed ;
+}
+
+.markdown th {
+  @apply py-2 px-4 rounded-lg font-semibold text-left;
+}
+
+.markdown td {
+  @apply py-2 px-4 bg-white border-y-2 border-gray-200 rounded-lg;
+}
+
+.markdown img {
+  @apply mx-auto my-4 rounded-lg shadow-lg;
+}
+
+.markdown a {
+  @apply text-lg text-sky-500 hover:text-sky-900;
+}
+
+.markdown ul {
+  @apply list-disc pl-4;
+}
+
+.markdown ol {
+  @apply list-decimal pl-4;
+}
+
+.markdown em {
+  @apply italic;
+}
+
+.markdown blockquote {
+  @apply border-l-4 border-gray-300 pl-4 italic;
+}

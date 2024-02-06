@@ -8,7 +8,6 @@ function createCard(content: CardProps) {
     <Card
       id = {content.id}
       title = {content.title}
-      description = {content.description}
       image_url = {content.image_url}
     />
   )
