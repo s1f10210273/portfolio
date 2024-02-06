@@ -3,7 +3,7 @@ import Card from "./components/Card";
 import Portfolio from "./portfolio";
 
 
-export function createCard(content: CardProps) {
+function createCard(content: CardProps) {
   return (
     <Card
       title = {content.title}
