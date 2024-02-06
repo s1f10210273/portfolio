@@ -5,11 +5,13 @@ import Portfolio from "./portfolio";
 
 function createCard(content: CardProps) {
   return (
-    <Card
-      id = {content.id}
-      title = {content.title}
-      image_url = {content.image_url}
-    />
+    <div className="snap-center">
+      <Card
+        id = {content.id}
+        title = {content.title}
+        image_url = {content.image_url}
+      />
+    </div>
   )
 }
 export default function Home() {
@@ -21,7 +23,7 @@ export default function Home() {
       <div id="Portfolio">
         <div className="m-5 p-4 bg-white rounded-lg overflow-hidden shadow-md">
         <h1 className="text-3xl text-center font-bold m-5">Portfolio</h1>
-          <div className="flex overflow-x-auto">
+          <div className="flex overflow-x-auto snap-x">
             {Portfolio.map(createCard)}
           </div>
         </div>
