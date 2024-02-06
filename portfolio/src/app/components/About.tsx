@@ -38,15 +38,15 @@ export default function About() {
         <div className="relative">
           <Image
             src="/2x3_hero.jpeg"
-            width={800}
-            height={1200}
+            width={400}
+            height={600}
             className="hidden md:block rounded-lg"
             alt="me"
           />
           <Image
             src="/3x2_hero.jpeg"
-            width={300}
-            height={200}
+            width={150}
+            height={100}
             className="block md:hidden rounded-lg"
             alt="me"
           />
