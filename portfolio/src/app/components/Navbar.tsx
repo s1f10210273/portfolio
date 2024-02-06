@@ -1,5 +1,13 @@
 "use client";
 import React, { useState } from "react";
+import { Roboto_Mono } from "next/font/google";
+import Link from 'next/link'
+
+export const roboto_mono = Roboto_Mono({
+  subsets: ['latin'],
+  display: 'swap',
+});
+
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -11,14 +19,16 @@ export default function Navbar() {
   return (
     <nav className="flex items-center justify-between flex-wrap bg-sky-300 p-6">
       <div className="flex items-center flex-shrink-0 text-white mr-6">
-        <span className="font-semibold text-xl tracking-tight">
-          Oshikubo Shuei
+        <span className="font-semibold text-3xl tracking-tight">
+            <Link href="/" className={roboto_mono.className}>
+            Shuei's portfolio
+            </Link>
         </span>
       </div>
       <div className="block lg:hidden">
         <button
           onClick={open}
-          className="flex items-center px-3 py-2 border rounded text-sky-200 border-sky-400 hover:text-white hover:border-white"
+          className="flex items-center px-3 py-2 text-sky-200 hover:text-white"
         >
           <svg
             className={`h-8 w-8 text-sky-50 ${isOpen ? "hidden" : "block" }`}
@@ -42,13 +52,13 @@ export default function Navbar() {
         <div className="text-sm lg:flex-grow">
           <a
             href="#responsive-header"
-            className="block mt-4 lg:inline-block lg:mt-0 text-sky-50 hover:text-white mr-4"
+            className="block mt-4 text-xl lg:inline-block lg:mt-0 text-sky-50 hover:text-white mr-4"
           >
             About Me
           </a>
           <a
             href="#responsive-header"
-            className="block mt-4 lg:inline-block lg:mt-0 text-sky-50 hover:text-white mr-4"
+            className="block mt-4 text-xl lg:inline-block lg:mt-0 text-sky-50 hover:text-white mr-4"
           >
             Portfolio
           </a>
