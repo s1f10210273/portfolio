@@ -67,7 +67,7 @@ export default function Navbar() {
       >
         <div className="text-sm lg:flex-grow">
           <Link
-            href="#AboutMe"
+            href="/#AboutMe"
             className="block mt-4 text-xl lg:inline-block lg:mt-0 text-sky-50 hover:text-white mr-4"
           >
             About Me
