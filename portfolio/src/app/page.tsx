@@ -3,6 +3,8 @@ import About from "./components/About";
 
 export default function Home() {
   return (
-    <About />
+    <div id="AboutMe">
+      <About />
+    </div>
   );
 }

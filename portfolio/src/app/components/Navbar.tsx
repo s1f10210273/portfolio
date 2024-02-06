@@ -50,12 +50,12 @@ export default function Navbar() {
         className={`w-full block flex-grow lg:flex ${isOpen ? "block" : "hidden"} lg:items-center lg:w-auto`}
       >
         <div className="text-sm lg:flex-grow">
-          <a
-            href="#responsive-header"
+          <Link
+            href="#AboutMe"
             className="block mt-4 text-xl lg:inline-block lg:mt-0 text-sky-50 hover:text-white mr-4"
           >
             About Me
-          </a>
+          </Link>
           <a
             href="#responsive-header"
             className="block mt-4 text-xl lg:inline-block lg:mt-0 text-sky-50 hover:text-white mr-4"
