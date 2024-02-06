@@ -1,0 +1,23 @@
+/* styles.css */
+
+.code-block {
+  background-color: theme('colors.codeBackground');
+  color: theme('colors.codeText');
+  font-family: 'Fira Code', monospace; /* フォントを変更 */
+  font-size: 14px; /* フォントサイズを設定 */
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+
+.code-block pre {
+  margin: 0;
+}
+
+.code-block pre code {
+  font-family: inherit; /* フォントを継承 */
+}
+
+.highlighted {
+  background-color: theme('colors.codeHighlight');
+  border-radius: 0.25rem;
+}
