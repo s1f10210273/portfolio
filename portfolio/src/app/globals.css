@@ -43,7 +43,7 @@
 }
 
 .markdown code {
-  @apply font-mono text-sm inline bg-sky-50 rounded px-1 py-1; /* コードブロックのスタイルを微調整 */
+  @apply font-mono text-sm inline bg-sky-50 rounded px-1 py-1 whitespace-pre-wrap; /* コードブロックのスタイルを微調整 */
 }
 
 .markdown pre {
@@ -51,7 +51,7 @@
 }
 
 .markdown pre code {
-  @apply font-mono block bg-transparent p-0 overflow-visible rounded-none; /* pre要素内のコードブロックのスタイルを微調整 */
+  @apply font-mono block bg-transparent p-0 overflow-visible rounded-none whitespace-pre-wrap; /* pre要素内のコードブロックのスタイルを微調整 */
 }
 
 .markdown table {
@@ -63,7 +63,7 @@
 }
 
 .markdown td {
-  @apply py-2 px-4 bg-white border-y-2 border-gray-200 rounded-lg;
+  @apply py-2 px-4 bg-white border-y-2 border-gray-200;
 }
 
 .markdown img {
