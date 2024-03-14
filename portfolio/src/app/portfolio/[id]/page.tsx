@@ -56,9 +56,7 @@ export default function Port({ params }: { params: { id: string } }) {
         <button type="button" className="text-white bg-gradient-to-r from-sky-500 via-sky-600 to-sky-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-sky-300 dark:focus:ring-sky-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2">ページへ</button>
         </Link>
       </div>
-      <div className="m-5 p-10 bg-white rounded-lg overflow-hidden shadow-md">
-
-        <h1 className='leading-tight border-b text-4xl font-semibold mb-4 mt-8 pb-2'>{portfolioItem?.title} について</h1>
+      <div className="m-5 p-5 bg-white rounded-lg overflow-hidden shadow-md">
         <ReactMarkdown remarkPlugins={[remarkGfm]} className='markdown'>
           {markdown}
           </ReactMarkdown>
