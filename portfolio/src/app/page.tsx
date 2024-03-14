@@ -23,7 +23,7 @@ export default function Home() {
       <div id="Portfolio">
         <div className="m-5 p-4 bg-white rounded-lg overflow-hidden shadow-md">
         <h1 className="text-3xl text-center font-bold m-5">Portfolio</h1>
-          <div className="flex overflow-x-auto snap-x">
+          <div className="flex overflow-x-auto">
             {Portfolio.map(createCard)}
           </div>
         </div>
