@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  scroll-behavior: smooth;
+}
+
 .markdown {
   @apply text-gray-800 leading-relaxed break-words; /* テキストの色や行間などを微調整 */
 }
@@ -55,7 +59,7 @@
 }
 
 .markdown table {
-  @apply w-full bg-sky-50 rounded-lg table-fixed ;
+  @apply w-full bg-sky-50 rounded-lg table-fixed;
 }
 
 .markdown th {
